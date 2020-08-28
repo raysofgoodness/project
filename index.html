@@ -9,62 +9,69 @@
 </head>
 
 <body>
-    <header class="header">
-        <a href="#">Back to <span>Woman</span></a>
-        <br>
-        <h1>The Atelier Tailored Coat</h1>
-        <br>
-        <p class="price">$499.00</p>
-    </header>
-    <section>
-        <div class="product">
-            <p class="ava">Availability : <span>In stock</span></p>
-            <p>Product Code : <span>#4657</span></p>
-            <p>Tags : <span>Fashion, Hood, Classic</span></p>
-        </div>
-        <div class="description">
-            <p>Sleek, polished, and boasting an impeccably modern fit, this blue, 2-button<br> Lazio suit features a
-                notch <span>lapel</span>, flap pockets, and accompanying flat<br> front trousers—all in pure wool by
-                Vitale Barberis Canonico.</p>
-            <ul>
-                <li>Dark blue suit for a tone-on-tone look</li>
-                <li>Regular fit</li>
-                <li>100% Cotton</li>
-                <li>Free shipping with 4 days delivery</li>
-            </ul>
-        </div>
-    </section>
-    <form action="#" method="#">
-        <label for="color">COLOR</label>
-        <select id="color" name="color">
-            <option value="colorselect" disabled>Select color</option>
-            <option value="grey">Grey</option>
-            <option value="black">Black</option>
-            <option value="white">White</option>
-        </select>
-        <label for="size">SIZE</label>
-        <select id="size" name="size">
-            <option value="sizeselect" disabled>Size</option>
-            <option value="small">S</option>
-            <option value="medium">M</option>
-            <option value="large">L</option>
-        </select>
-        <label for="quantity">QTY</label>
-        <input id="quantity" type="number" min="1" max="10">
-        <div>
-            <label for="clear">
-                <input type="reset" class="btn-reset" id="clear" value="CLEAR SELECTION" />
-            </label>
-        </div>
-        <div>
-            <label for="to-cart">
-                <input type="button" class="btn-cart" id="to-cart" value="ADD TO CART" />
-            </label>
-            <label for="to-wish">
-                <input type="button" class="btn-wish" id="to-wish" value="ADD TO WISHLIST" />
-            </label>
-        </div>
-    </form>
+    <div class="wrapper">
+        <header class="header">
+            <div class="back">
+                <a href="#">Back to <span>Woman</span></a>
+            </div>
+            <div class="header_top">
+                <h1>The Atelier Tailored Coat</h1>
+            </div>
+            <p class="price">$499.00</p>
+        </header>
+        <section>
+            <div class="product">
+                <p class="ava">Availability : <span>In stock</span></p>
+                <p>Product Code : <span>#4657</span></p>
+                <p>Tags : <span>Fashion, Hood, Classic</span></p>
+            </div>
+            <div class="description">
+                <p>Sleek, polished, and boasting an impeccably modern fit, this blue, 2-button<br> Lazio suit features a
+                    notch <span>lapel</span>, flap pockets, and accompanying flat<br> front trousers—all in pure wool by
+                    Vitale Barberis Canonico.</p>
+                <ul class="list">
+                    <li>Dark blue suit for a tone-on-tone look</li>
+                    <li>Regular fit</li>
+                    <li>100% Cotton</li>
+                    <li>Free shipping with 4 days delivery</li>
+                </ul>
+            </div>
+        </section>
+        <form class="form" action="#" method="#">
+            <p><span class="atribute">COLOR</span><span class="atribute size">SIZE</span><span
+                    class="atribute qty">QTY</span></p>
+            <div class="select">
+                <select class="select__color" id="color" name="color">
+                    <option value="colorselect" value="Select color">Select color</option>
+                    <option value="grey">Grey</option>
+                    <option value="black">Black</option>
+                    <option value="white">White</option>
+                </select>
+                <!-- <label for="size">SIZE</label> -->
+                <select class="select__size" id="size" name="size">
+                    <option value="sizeselect" value="Size">Size</option>
+                    <option value="small">S</option>
+                    <option value="medium">M</option>
+                    <option value="large">L</option>
+                </select>
+                <!-- <label for="quantity">QTY</label> -->
+                <input class="select__number" id="quantity" type="number" autofocus placeholder="1" min="1" max="10">
+            </div>
+            <div>
+                <label for="clear">
+                    <input type="reset" class="btn-reset" id="clear" value="CLEAR SELECTION" />
+                </label>
+            </div>
+            <div class="buttons">
+                <label for="to-cart">
+                    <input type="button" class="btn-cart" id="to-cart" value="ADD TO CART" />
+                </label>
+                <label for="to-wish">
+                    <input type="button" class="btn-wish" id="to-wish" value="ADD TO WISHLIST" />
+                </label>
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>

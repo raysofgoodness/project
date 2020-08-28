@@ -1,3 +1,23 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    margin: 100px auto;
+    width: 480px;
+    height: 730px;
+}
+
+.back {
+    float: left;
+}
+
+.header_top {
+    padding-top: 48px;
+}
+
 a {
     font-size: 14px;
     color: #555555;
@@ -13,10 +33,12 @@ a span {
     font-weight: 700;
 }
 .price {
+    padding-top: 68px;
     font-size: 24px;
     color: #0066cc;
 }
 .product {
+    padding-top: 32px;
     font-size: 14px;
     font-weight: 400;
 }
@@ -30,40 +52,103 @@ a span {
     color: black;
 }
 .description {
+    padding-top: 38px;
     font-size: 12px;
     font-weight: 400;
     color: #666666;
 }
+
+.list {
+    padding: 32px 0 0 12px;
+}
 .description span {
     font-weight: 700;
     color: #000000;
+}
+
+.form {
+    padding-top: 42px;
 }
 label {
     font-size: 14px;
     font-weight: 700;
     color: #111111;
 }
-select,
-input {
-    font-size: 13px;
-    font-weight: 400;
+
+.atribute {
+    font-size: 14px;
+    font-weight: 700;
     color: #111111;
 }
 .btn-reset {
+    margin-top: 40px;
     font-size: 12px;
     font-weight: 400;
     color: #663333;
     text-decoration: underline;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 .btn-cart {
+    width: 170px;
+    height: 54px;
+    border: none;
     background-color: #111111;
     color: #ffffff;
     font-size: 14px;
     font-weight: 700;
+    cursor: pointer;
 }
 .btn-wish {
+    width: 170px;
+    height: 54px;
+    border: 1px solid #e1e1e1;
     background-color: #ffffff;
     color: #111111;
     font-size: 14px;
     font-weight: 700;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+select {
+    display: block;
+    margin-top: 20px;
+}
+
+.size,
+.qty {
+    padding-left: 120px;
+}
+
+.select__color {
+    display: block;
+    width: 140px;
+    height: 36px;
+    border: 1px solid #e1e1e1;
+    padding: 8px;
+}
+
+.select {
+    display: flex;
+}
+
+.select__size {
+    margin-left: 30px;
+    width: 140px;
+    height: 36px;
+    border: 1px solid #e1e1e1;
+    padding: 8px;
+}
+
+.select__number {
+    margin: 20px 0 0 12px;
+    width: 38px;
+    height: 36px;
+    border: 1px solid #e1e1e1;
+}
+
+.buttons {
+    margin-top: 38px;
 }
